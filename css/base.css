@@ -1,0 +1,23 @@
+/* base.css – variabel warna, reset, tipografi, navbar */
+:root{
+  --bg:#17181C; --panel:#202228; --panel2:#2A2D35; --line:#3A3D47; --ink:#F4F5F7; --muted:#A9AEBB;
+  --red:#E10600; --purple:#B44CF0; --green:#1FD56B; --yellow:#FFD60A; --ph:#3B3411; --ph-ink:#FFE680;
+  color-scheme:dark; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 60px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:400 17px/1.65 "Titillium Web",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg) repeating-linear-gradient(45deg,rgba(255,255,255,.025) 0 2px,transparent 2px 6px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+h1,h2,h3,.f1{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;line-height:.95;margin:0}
+a{color:var(--ink)}
+a:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.ph{background:var(--ph);color:var(--ph-ink);border-radius:3px;padding:0 4px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:3px solid var(--red)}
+nav .wrap{display:flex;gap:22px;align-items:center;height:54px;overflow-x:auto;white-space:nowrap}
+nav strong{font:italic 800 24px "Barlow Condensed",sans-serif;color:var(--red);margin-right:auto}
+nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+nav a:hover{color:var(--ink)}
+.flag{height:22px;background:repeating-conic-gradient(#fff 0 25%,#111 0 50%) 0 0/22px 22px}

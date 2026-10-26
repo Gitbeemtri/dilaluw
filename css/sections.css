@@ -1,0 +1,38 @@
+/* sections.css – profil, pengalaman PKL, skill, proyek, kontak, footer */
+section{padding:64px 0 24px}
+section h2{font-size:clamp(40px,6vw,64px);margin-bottom:10px}
+section h2::after{content:"";display:block;width:90px;height:6px;background:var(--red);margin-top:12px;transform:skewX(-25deg)}
+.sub{color:var(--muted);max-width:62ch;margin:18px 0 30px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:26px}
+.facts{margin:0;padding:0;list-style:none;background:var(--panel)}
+.facts li{display:flex;justify-content:space-between;gap:16px;padding:12px 18px;border-bottom:1px solid var(--line)}
+.facts li:last-child{border:0}
+.facts span{color:var(--muted)}
+.job{background:var(--panel);padding:26px;border-top:4px solid var(--red)}
+.job header{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.job h3{font-size:34px}
+.job .when{color:var(--yellow);font-weight:600}
+.job ul.do{margin:0 0 16px;padding-left:20px}
+.job ul.do li{margin-bottom:6px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;padding:0;margin:0;list-style:none}
+.tags li{background:var(--panel2);padding:2px 12px;font-size:14px;font-weight:600;border-left:3px solid var(--red)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin:0 0 22px;padding:0;list-style:none;font-size:15px;color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:14px;margin-right:8px;vertical-align:-2px;transform:skewX(-20deg)}
+.tele{display:grid;grid-template-columns:1fr 1fr;gap:12px 40px}
+.sk div{display:flex;justify-content:space-between;font-weight:600;margin-bottom:4px}
+.bar{height:12px;background:var(--panel2);transform:skewX(-25deg)}
+.bar i{display:block;height:100%;background:var(--c)}
+.soft{margin-top:30px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.proj3{grid-template-columns:repeat(3,1fr)}
+.race{background:var(--panel);padding:24px;border-left:6px solid var(--red)}
+.race h3{font-size:30px;margin-bottom:10px}
+.race .rd{color:var(--yellow);font:italic 800 18px "Barlow Condensed",sans-serif;text-transform:uppercase;display:block;margin-bottom:6px}
+.race p{color:var(--muted);margin:0 0 14px}
+.radio{background:var(--red);color:#fff;padding:38px 30px;margin-top:20px;clip-path:polygon(0 0,100% 0,100% calc(100% - 28px),calc(100% - 28px) 100%,0 100%)}
+.radio h2{font-size:clamp(40px,6vw,64px)}
+.radio h2::after{background:#fff}
+.radio p{margin:16px 0 0;max-width:50ch}
+.radio ul{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:4px}
+.radio a{font-weight:600}
+footer{padding:34px 0 40px;color:var(--muted);font-size:14px}
